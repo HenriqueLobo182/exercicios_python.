@@ -35,10 +35,11 @@ print('~'*60)
 
 while True:
     escolha = int(input(f'Deseja ver qual jogador? [0/ {len(jogadorlista) - 1}] [999 para parar] '))
+    if escolha == 999:
+        break
     if escolha >= len(jogadorlista) or escolha < 0:
         print(f'Valor {escolha} não existe')
-    elif escolha == 999:
-        break
+    
     else:
         print(f'{jogadorlista[escolha]["nome"]} jogou {len(jogadorlista[escolha]["gols"])} partidas')
         for c, g in enumerate(jogadorlista[escolha]["gols"]):
