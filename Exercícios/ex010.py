@@ -2,7 +2,7 @@
 #ela pode comprar
 # US$1,00 = R$5,39 e £1,00 = R$7,19
 
-r = float(input('Digite quanto você tem na carteira: '))
-d = (r/5.39)
-l = (r/7.19)
-print('Com R${:.2f} você poderá comprar US${:.2f} e £{:.2f}.'. format(r, d, l))
+reals = float(input('Type how much you have in your wallet: R$'))
+dollars = (reals / 5.39)
+pounds = (reals / 7.19)
+print(f'With R${reals:.2f}, you can buy US${dollars:.2f} and £{pounds:.2f}')

@@ -2,4 +2,4 @@
 
 celsius = float(input('Digite a temperatura em °C: '))
 fahrenheit = (celsius * 9 / 5) + 32
-print('A temperatura {}°C convertido para Fahrenheit passará a valer {}°F'.format(celsius, fahrenheit))
+print(f'The temperature {celsius}°C converted to Fahrenheit will be worth {fahrenheit:.1f}°F')
