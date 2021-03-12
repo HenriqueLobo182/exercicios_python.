@@ -2,9 +2,7 @@
 # Exemplo: 6.127 tem como porção inteira 6
 
 from math import trunc
-numero = float(input('Digite um número: '))
-print('A porção inteira de {} vale {}'.format(numero, int(numero)))
-
-print('==-'*15)  # ou
-
-print('A porção inteira de {} vale {}'.format(numero, trunc(numero)))
+number = float(input('Type a number: '))
+print(f'The non-decimal portion of {number} is worth {int(number)}')
+print('==-'*15)  # or
+print(f'The non-decimal portion of {number} is worth {trunc(number)}')

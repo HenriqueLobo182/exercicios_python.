@@ -2,7 +2,7 @@
 # calcule e mostre o comprimento da hipotenusa.
 
 from math import hypot
-oposto = float(input('Informe o cateto oposto: '))
-adjacente = float(input('Informe o cateto adjacente: '))
-hipotenusa = hypot(oposto, adjacente)
-print('A hipotenusa desse triângulo retângulo vale {:.2f}'.format(hipotenusa))
+opposite = float(input('Enter the value of the opposite side: '))
+adjacent = float(input('Enter the value of the adjacent side: '))
+hypotenuse = hypot(opposite, adjacent)
+print(f'The hypotenuse of the right triangle is equal to {hypotenuse:.2f}')
