@@ -5,13 +5,13 @@
 # Centena: 8
 # Milhar: 1
 
-numero = int(input('Digite um número: '))
-u = numero // 1 % 10
-d = numero // 10 % 10
-c = numero // 100 % 10
-m = numero // 1000 % 10
-print('Analisando o número {}'.format(numero))
-print('Unidade {}'.format(u))
-print('Dezena {}'.format(d))
-print('Centena {}'.format(c))
-print('Milhar {}'.format(m))
+number = int(input('Type a number: '))
+units = number // 1 % 10
+dozens = number // 10 % 10
+hundreds = number // 100 % 10
+thousands = number // 1000 % 10
+print(f'Analyzing the number {number}, we have:')
+print(f'Units = {units}')
+print(f'Dozens = {dozens}')
+print(f'Hundreds = {hundreds}')
+print(f'Thousands = {thousands}')

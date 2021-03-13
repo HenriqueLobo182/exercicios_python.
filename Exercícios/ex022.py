@@ -4,16 +4,16 @@
 # Quantas letras ao todo (sem considerar espaços).
 # Quantas letras tem o primeiro nome
 
-nome = str(input('Digite seu nome completo: ')).strip()
-print('Seu nome maiúsculo é {}'.format(nome.upper()))
-print('Seu nome minúsculo é {}'.format(nome.lower()))
+name = str(input('Enter your full name: ')).strip()
+print(f'Your capitalized name is: {name.upper()}')
+print(f'Your name in lower case is: {name.lower()}')
 
-nse = nome.replace(' ', '')  # nome completo eliminando espaços
-print('Seu nome completo possui {} letras'.format(len(nse)))
-ns = nome.split()  # separando os nomes
-print('Seu primeiro nome possui {} letras'.format(len(ns[0])))
+nameWithoutSpaces = name.replace(' ', '')  
+print(f'Your full name has {len(nameWithoutSpaces)} letters')
+separateName = name.split()
+print(f'Your first name has {len(separateName[0])} letters')
 
-print('==-'*15)  # OU
+print('=-'*20)  # OR
 
-print('Seu nome completo possui {} letras'.format(len(nome) - nome.count(' ')))
-print('Seu primeiro nome possui {} letras'.format(nome.find(' ')))
+print(f'Your full name has {len(name) - name.count(" ")} letters')
+print(f'Your first name has {name.find(" ")} letters')
