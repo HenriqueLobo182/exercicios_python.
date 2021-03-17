@@ -3,8 +3,10 @@
 # Em que posição ela aparece a primeira vez
 # Em posição ela aparece a última vez
 
-frase = str(input('Digite uma frase: ')).strip().upper()
-
-print('A letra A apareceu {} vezes'.format(frase.count('A')))
-print('A primeira letra A apareceu na posição {}'.format(frase.find('A') + 1))
-print('A última letra A apareceu na posição {}'.format(frase.rfind('A') + 1))
+phrase = str(input('Type a phrase: ')).strip().upper()
+number_of_letters_a = phrase.count('A')
+first_a = (phrase.find('A') + 1)
+last_a = (phrase.rfind('A') + 1)
+print(f'The letter "A" appears {number_of_letters_a} times')
+print(f'The first letter "A" appears in the {first_a}º position')
+print(f'The last letter "A" appears in the {last_a}º position')

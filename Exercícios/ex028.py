@@ -6,16 +6,16 @@ from random import randint
 from time import sleep
 
 print('==-'*12)
-print('Vou pensar em um número de 0 a 5')
+print('I will think of a number from 0 to 5')
 print('==-'*12)
 sleep(1)
 
-nc = randint(0, 5)  # número escolhido pelo computador
-nu = int(input('Em que número pensei? '))  # número escolhido pelo usuário
-
-print('PROCESSANDO...')
+computerNumber = randint(0, 5)  
+userNumber = int(input('What number I thought? '))  
+print('PROCESSING...')
 sleep(1)
-if nc == nu:
-    print('Parabéns você adivinhou o número!')
+
+if computerNumber == userNumber:
+    print('Congratulations you guessed the number!')
 else:
-    print('Eu escolhi o número {} e não o número {}. Tente novamente!'.format(nc, nu))
+    print(f'I chose number {computerNumber} and not number {userNumber}. Try again!')

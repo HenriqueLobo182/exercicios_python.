@@ -3,11 +3,9 @@
 # Primeiro: Ana
 # Último: Souza
 
-nome = str(input('Digite seu nome completo: ')).strip()
-print('Seu primeiro nome é {}'.format(nome.split()[0]))
-print('Seu último nome é {}'.format(nome[nome.rfind(' ')+1:]))
-
-print('==-'*15)  # OU
-
-n = nome.split()
-print('Seu último nome é {}'.format(n[len(n)-1]))
+name = str(input('Enter your full name: ')).strip()
+splitName = name.split()
+firstName = splitName[0]
+lastName = splitName[-1]
+print(f'Your first name is {firstName}')
+print(f'Your last name is {lastName}')
