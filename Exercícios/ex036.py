@@ -2,15 +2,16 @@
 # salário do comprador e em quantos anos ele vai pagar.
 # Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado
 
-color = {'vermelho': '\033[31m', 'verde': '\033[32m', 'limpa': '\033[m'}
+colors = {'red': '\033[31m', 'green': '\033[32m', 'clean': '\033[m'}
 
-vc = float(input('Valor da casa: R$'))  # valor da casa
-sf = float(input('Salário do comprador: R$'))  # salário do funcionário
-ae = int(input('Anos de pagamento: '))  # anos do empréstimos
+houseValue = float(input('House value: R$')) 
+employeeSalary = float(input('Employee salary: R$')) 
+years_of_payment = int(input('Years of payment: '))  
 
-pm = vc / (ae*12)
+monthlyInstallment = houseValue / (years_of_payment*12)
+loanApproval = monthlyInstallment <= (employeeSalary*0.30)
 
-if pm <= (sf*0.3):
-    print('{}Empréstimo aceito!{} O valor mensal da prestação será de R${:.2f}'.format(color['verde'], color['limpa'], pm))
+if loanApproval:
+    print(f"{colors['green']}Loan accepted!{colors['clean']} The monthly loan amount will be R${monthlyInstallment:.2f}")
 else:
-    print('{}Empréstimo negado! A prestação de R${:.2f} excede 30% do salário do funcionário'.format(color['vermelho'], pm))
+    print(f"{colors['red']}Loan dennied!{colors['clean']} The monthly amount of R${monthlyInstallment:.2f} of the loan exceeds 30% of the employee's salary")

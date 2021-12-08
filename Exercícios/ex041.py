@@ -8,21 +8,21 @@
 
 from datetime import date
 
-an = int(input('Digite o ano de nascimento do atleta: '))  # ano de nascimento
-i = (date.today().year - an)  # idade
+year_of_birth = int(input('Digite o ano de nascimento do atleta: '))  
+age = (date.today().year - year_of_birth)  
 
-if i <= 9:
-    print('O atleta tem {} anos'.format(i))
+if age <= 9:
+    print('O atleta tem {} anos'.format(age))
     print('Classificação: MIRIM')
-elif 9 < i <= 14:
-    print('O atleta tem {} anos'.format(i))
+elif 9 < age <= 14:
+    print('O atleta tem {} anos'.format(age))
     print('Classificação: INFANTIL')
-elif 14 < i <= 19:
-    print('O atleta tem {} anos'.format(i))
+elif 14 < age <= 19:
+    print('O atleta tem {} anos'.format(age))
     print('Classificação: Junior')
-elif 19 < i <= 25:
-    print('O atleta tem {} anos'.format(i))
+elif 19 < age <= 25:
+    print('O atleta tem {} anos'.format(age))
     print('Classificação: SÊNIOR')
 else:
-    print('O atleta tem {} anos'.format(i))
+    print('O atleta tem {} anos'.format(age))
     print('Classificação: MASTER')

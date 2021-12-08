@@ -1,11 +1,13 @@
 # Desenvolva um programa que leia o comprimento de três retas e diga ao usuário se elas podem ou não formar um triângulo
 
-r1 = float(input('Primeira reta: '))
-r2 = float(input('Segunda reta: '))
-r3 = float(input('Terceira reta: '))
+side01 = float(input('First side: '))
+side02 = float(input('Second side: '))
+side03 = float(input('Third side: '))
 
-t = ((r1+r2) > r3 and (r2+r3) > r1 and (r3+r1) > r2)  # condição para existência de triângulo
-if t:
-    print('As retas {}, {} e {} podem formar um triângulo'.format(r1, r2, r3))
+condition_to_be_a_triangle = (side01 + side02) > side03 and (side02 + side03) > side01 and (side03 + side01) > side02
+t = ((side01+side02) > side03 and (side02+side03) > side01 and (side03+side01) > side02)  
+
+if condition_to_be_a_triangle:
+    print(f'Sides {side01}, {side02} and {side03} can form a tringle')
 else:
-    print('As retas {}, {} e {} não podem formar um triângulo'.format(r1, r2, r3))
+    print(f'Sides {side01}, {side02} and {side03} cannot form a tringle')

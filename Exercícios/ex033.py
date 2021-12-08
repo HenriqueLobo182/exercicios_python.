@@ -1,19 +1,19 @@
 # Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
 
-n1 = int(input('Primeiro número: '))
-n2 = int(input('Segundo número: '))
-n3 = int(input('Terceiro número: '))
+number01 = int(input('First number: '))
+number02 = int(input('Second number: '))
+number03 = int(input('Third number: '))
 
-menor = n1  # Verificando quem é o menor
-if n2 < n3 and n2 < n1:
-    menor = n2
-if n3 < n1 and n3 < n2:
-    menor = n3
-print('O menor número foi {}'.format(menor))
+smallest = number01
+if number02 < smallest:
+    smallest = number02
+if number03 < smallest:
+    smallest = number03
+print(f'The smallest number was {smallest}')
 
-maior = n1  # Verificando quem é o maior
-if n2 > n1 and n2 > n3:
-    maior = n2
-if n3 > n1 and n3 > n2:
-    maior = n3
-print('O maior número foi {}'.format(maior))
+highest = number01
+if number02 > highest:
+    highest = number02
+if number03 > highest:
+    highest = number03
+print(f'The highest number was {highest}')

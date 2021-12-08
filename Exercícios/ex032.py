@@ -2,15 +2,15 @@
 
 from datetime import date
 
-ano = int(input('Digite um ano? Coloque 0 para analisar o ano atual: '))
+year = int(input('Type a year: [0 for the current year] '))
 
-if ano == 0:
-    ano = date.today().year
+if year == 0: 
+    year = date.today().year
 
-s1 = (ano % 4 == 0) and (ano % 100 != 0)  # situação 1
-s2 = (ano % 400 == 0)  # situação 2
+circumstance01  = (year % 4 == 0) and (year % 100 != 0)
+circumstance02 = (year % 400 == 0)
 
-if s1 or s2:
-    print('O ano {} é bissexto'.format(ano))
+if circumstance01 or circumstance02:
+    print(f'The year {year} is a leap year')
 else:
-    print('O ano {} não é bissexto'.format(ano))
+    print(f'The year {year} is not a leap year')

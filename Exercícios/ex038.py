@@ -1,12 +1,12 @@
 # Escreva um programa que leia dois números inteiros e compare-os, mostrando na tela uma mensagem:
 # O primeiro valor é maior. O segundo valor é maior. Não existe valor maior, os dois são iguais.
 
-n1 = int(input('Digite um número: '))
-n2 = int(input('Digite outro valor: '))
+number01 = int(input('Type a number: '))
+number02 = int(input('Type another number: '))
 
-if n1 > n2:
-    print('O primeiro valor é maior!')
-elif n2 > n1:
-    print('O segundo valor é maior!')
+if number01 > number02:
+    print('The first number is greater!')
+elif number02 > number01:
+    print('The second number is greater!')
 else:
-    print('Os dois são iguais, não existe valor maior!')
+    print('The two are the same, there is no greater number!')

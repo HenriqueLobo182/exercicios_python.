@@ -6,17 +6,23 @@
 
 from datetime import date
 
-an = int(input('Digite seu ano de nascimento: '))  # ano de nascimento
-i = (date.today().year - an)  # idade
+year_of_birth = int(input('Type your year of birth: '))  
+age = (date.today().year - year_of_birth)  
 
-if i < 18:
-    print('Você tem {} anos.'.format(i))
-    print('Daqui a {} anos você deverá se alistar'.format(18 - i))
-    print('Seu alistamento será em {}'.format(date.today().year + (18 - i)))
-elif i > 18:
-    print('Você tem {} anos.'.format(i))
-    print('O tempo de alistamento foi ultrapassado em {} anos'.format(i - 18))
-    print('Seu alistamento deveria ter sido feito em {}'.format(date.today().year - (i - 18)))
+if age < 18:
+    years_until_military_enlistment = (18 - age)
+    year_of_military_enlistment = (date.today().year + years_until_military_enlistment)
+    print(f'You are {age} years old')
+    print(f'{years_until_military_enlistment} years from now you need to enlist in the military')
+    print(f'Your military enlistment will be in {year_of_military_enlistment}')
+
+elif age > 18:
+    years_exceeded = (age - 18)
+    year_of_military_enlistment = (date.today().year - years_exceeded)
+    print(f'You are {age} years old')
+    print(f'The military enlistment period was exceeded by {years_exceeded} years')
+    print(f'Your military enlistment should have been done on {year_of_military_enlistment}')
+
 else:
-    print('Você tem {} anos'.format(i))
-    print('{} é o ano do seu alistamento'.format(date.today().year))
+    print(f'You are {age} years old')
+    print(f'{date.today().year} is the year of your military enlistment')

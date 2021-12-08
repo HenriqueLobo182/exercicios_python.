@@ -1,7 +1,7 @@
 # Crie um programa que leia um número Inteiro qualquer e mostre na tela se ele é PAR ou ÍMPAR.
 
-n = int(input('Digite um número Inteiro: '))
-if (n % 2) == 0:
-    print('O número {} é par'.format(n))
+number = int(input('Type a integer: '))
+if (number % 2) == 0:
+    print(f'The number {number} is even')
 else:
-    print('O número {} é ímpar'.format(n))
+    print(f'The number {number} is odd')

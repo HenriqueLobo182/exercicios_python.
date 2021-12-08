@@ -3,19 +3,19 @@
 # 2 para octal.
 # 3 para hexadecimal.
 
-n = int(input('Digite um número: '))
+number = int(input('Type a number: '))
 
 print('==-'*15)
-print('[1] para binário.')
-print('[2] para octal')
-print('[3] para hexadecimal')
-ec = int(input('Escolha a conversão: '))  # escolha usuário
+print('[1] for binaty.')
+print('[2] for octal')
+print('[3] for hexadecimal')
+userChoice = int(input('Choose conversion: '))  
 
-if ec == 1:
-    print('O número {} em binário corresponde a {}'.format(n, bin(n)[2:]))
-elif ec == 2:
-    print('O número {} em octal corresponde a {}'.format(n, oct(n)[2:]))
-elif ec == 3:
-    print('O número {} em hexadecimal corresponde a {}'.format(n, hex(n)[2:]))
+if userChoice == 1:
+    print(f'The number {number} in binary corresponds to {bin(number)[2:]}')
+elif userChoice == 2:
+    print(f'The number {number} in octal corresponds to {oct(number)[2:]}')
+elif userChoice == 3:
+    print(f'The number {number} in hexadecimal corresponds to {hex(number)[2:]}')
 else:
-    print('Escolha uma conversão válida!')
+    print('Choose a valid conversion!')

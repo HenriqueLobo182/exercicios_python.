@@ -2,9 +2,11 @@
 # Para salários superiores a RS1.250,00, calcule um aumento de 10%
 # Para os inferiores ou iguais, aumento é de 15%
 
-salario = float(input('Digite seu salário: R$'))
+salary = float(input('Type your salary: R$'))
 
-if salario > 1250.0:
-    print('O salário com o aumento de 10%, ficará R${:.2f}'.format(salario*1.1))
+if salary > 1250.0:
+    salaryIncrease = salary * 1.1
+    print(f'The salary with the 10% increase, will be {salaryIncrease:.2f}')
 else:
-    print('O salário com o aumento de 15%, ficará R${:.2f}'.format(salario*1.15))
+    salaryIncrease = salary * 1.15
+    print(f'The salary with the 15% increase, will be {salaryIncrease:.2f}')
